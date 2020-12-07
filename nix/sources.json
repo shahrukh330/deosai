@@ -1,4 +1,16 @@
 {
+    "gitignore.nix": {
+        "branch": "master",
+        "description": "Nix function for filtering local git sources",
+        "homepage": "",
+        "owner": "hercules-ci",
+        "repo": "gitignore.nix",
+        "rev": "c4662e662462e7bf3c2a968483478a665d00e717",
+        "sha256": "1npnx0h6bd0d7ql93ka7azhj40zgjp815fw2r6smg8ch9p7mzdlx",
+        "type": "tarball",
+        "url": "https://github.com/hercules-ci/gitignore.nix/archive/c4662e662462e7bf3c2a968483478a665d00e717.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
     "niv": {
         "branch": "master",
         "description": "Easy dependency management for Nix projects",
@@ -21,6 +33,18 @@
         "sha256": "110kgp4x5bx44rgw55ngyhayr4s19xwy19n6qw9g01hvhdisilwf",
         "type": "tarball",
         "url": "https://github.com/NixOS/nixpkgs/archive/030e2ce817c8e83824fb897843ff70a15c131b96.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "pre-commit-hooks.nix": {
+        "branch": "master",
+        "description": "Seamless integration of https://pre-commit.com git hooks with Nix.",
+        "homepage": "",
+        "owner": "cachix",
+        "repo": "pre-commit-hooks.nix",
+        "rev": "1b11ce0f8c65dd3d8e9520e23c100b76d09a858b",
+        "sha256": "0l2v8hsxrvj8w335xxxln49rpd9z5ncv6bl2wnk65zzzd4wa5rkm",
+        "type": "tarball",
+        "url": "https://github.com/cachix/pre-commit-hooks.nix/archive/1b11ce0f8c65dd3d8e9520e23c100b76d09a858b.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     }
 }

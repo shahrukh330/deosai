@@ -1,11 +1,9 @@
-{ sources ? import ./nix/sources.nix
-, pkgs ? import sources.nixpkgs {} 
+{ project ? import ./nix { }
 }:
-pkgs.mkShell {
-    buildInputs = [
-        pkgs.zlib
-        pkgs.htop
-        pkgs.which
-        pkgs.go
-    ];
+
+project.pkgs.mkShell {
+  buildInputs = builtins.attrValues project.devTools;
+  shellHook = ''
+    ${project.ci.pre-commit-check.shellHook}
+  '';
 }
